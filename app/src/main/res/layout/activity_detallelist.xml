@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/botonre2"
+    tools:context=".detallelist">
+
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:text="RESULTADOS ENCONTRADOS"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="17dp"
+                    android:paddingTop="30dp"
+                    android:layout_width="match_parent"
+                    android:text="Código"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+
+
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_cod"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:text="xxxx"
+                    android:background="@drawable/botonre3"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+
+
+
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingTop="10dp"
+                    android:textSize="17dp"
+                    android:layout_width="match_parent"
+                    android:text="Nombre"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/botonre2"
+
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:text="xxxx"
+                    android:background="@drawable/botonre3"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+
+                <TextView
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingTop="10dp"
+                    android:textSize="17dp"
+                    android:layout_width="match_parent"
+                    android:text="Estado"
+                    android:textColor="#FFF"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+                    android:background="@drawable/botonre2"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tv_precio"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:paddingLeft="15dp"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:text="0.00"
+                    android:background="@drawable/botonre3"
+                    android:textStyle="bold"
+                    android:paddingBottom="10dp"
+
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    >
+                    <Button
+                        android:id="@+id/btnDel"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="borrar"
+                        android:textColor="@color/White"
+                        android:background="@drawable/botonre"/>
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.1" />
+
+                    <Button
+
+                        android:id="@+id/btnEdit"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/botonre4"
+                        android:onClick="finish"
+                        android:text="SALIR"
+                        android:textColor="@color/White" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</LinearLayout>
+
+

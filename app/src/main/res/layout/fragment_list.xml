@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.list.ListFragment">
+
+    <LinearLayout android:padding="8dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/botonre4"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content">
+
+
+
+
+            <TextView
+                android:id="@+id/tfin"
+                android:layout_width="match_parent"
+                android:text="Lista de Articulos Varios"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                android:layout_marginBottom="30dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+        <SearchView
+            android:id="@+id/buscador"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/botonre3"
+
+            android:layout_height="wrap_content">
+
+
+        </SearchView>
+
+        <ListView
+            android:id="@+id/lsview"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/botonre3"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="2020 Palaciosky"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:textStyle="italic"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+</LinearLayout>

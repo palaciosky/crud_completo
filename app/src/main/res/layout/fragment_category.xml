@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backcat2"
+    android:orientation="vertical"
+    tools:context=".ui.categorias.CategoryFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_idcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColorHint="@color/Gray">
+        <EditText
+            android:padding="7dp"
+            android:id="@+id/ed_idcat"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:drawableStart="@drawable/ic_id1"
+            android:drawablePadding="5dp"
+            android:hint="Id Categoría"
+            android:inputType="number"
+            android:textSize="14dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/botonre3"
+            android:layout_height="match_parent">
+
+
+        </EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/ti_namecat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColorHint="@color/Gray">
+        <EditText
+            android:padding="7dp"
+            android:id="@+id/ed_namecat"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:drawableStart="@drawable/ic_addtext"
+            android:drawablePadding="5dp"
+            android:hint="Nombre Categoría"
+            android:inputType="text"
+            android:textSize="14dp"
+            android:textColor="@color/Black"
+            android:background="@drawable/botonre3"
+            android:layout_height="match_parent">
+
+
+        </EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="170dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/spinner_1"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/sp_status"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#bdfbea"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:spinnerMode="dropdown"
+
+            />
+
+        <ImageView
+
+            android:layout_width="30dp"
+            android:layout_height="41dp"
+            android:layout_gravity="right"
+            android:src="@drawable/down">
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+       >
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Guardar"
+            android:textColor="@color/White"
+            android:background="@drawable/botonre2"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+        <Button
+            android:id="@+id/btnNew"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nueva Categoria"
+            android:textColor="@color/White"
+            android:background="@drawable/botonre4"/>
+    </LinearLayout>
+
+</FrameLayout>
